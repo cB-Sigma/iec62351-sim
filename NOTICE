@@ -1,0 +1,35 @@
+iec62351-sim (a TLS peer that follows the IEC 62351-3 profile, in Go)
+Copyright 2026 Abhinav Gautam
+
+This module is licensed under the Apache License, Version 2.0 (LICENSE).
+Every file in it is under that licence.
+
+The code was written for SigmaM2M, a oneM2M platform, by the author of
+the iec62351 module. It contains no code from other projects and no
+IEC material or text of the standards. Files carry "Copyright 2026
+Abhinav Gautam" and "SPDX-License-Identifier: Apache-2.0".
+
+Trademarks
+----------
+
+IEC is a trademark of the International Electrotechnical Commission. The
+standard number IEC 62351 is used only to say what the simulator follows.
+This module is not affiliated with, endorsed or certified by IEC; it
+makes no conformance claim.
+
+Dependencies
+------------
+
+- github.com/cB-Sigma/iec62351 (Apache-2.0, Copyright 2026 Abhinav
+  Gautam): the TLS profile.
+- github.com/cB-Sigma/tlsx (BSD-3-Clause, a fork of Go's crypto/tls;
+  Copyright The Go Authors, changes and additions Copyright 2026 Abhinav
+  Gautam).
+- Indirect: github.com/cB-Sigma/iotsec and github.com/cB-Sigma/iotcrypto
+  (Apache-2.0 and, for iotcrypto's brainpool and bigmod packages,
+  BSD-3-Clause), golang.org/x/crypto and golang.org/x/sys (BSD-3-Clause,
+  Copyright The Go Authors).
+- The Go standard library (BSD-3-Clause, Copyright The Go Authors).
+
+Every certificate and key the simulator makes is generated when it runs
+and is for tests only.
